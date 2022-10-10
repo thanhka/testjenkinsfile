@@ -1,1 +1,12 @@
-git branch: 'main', url: 'https://github.com/thanhka/testjenkinsfile.git'
+pipline {
+    agent any
+    stages {
+        stage('Clone stage') {
+            steps {
+                git branch: 'main', url: 'https://github.com/thanhka/testjenkinsfile.git'
+            }
+        }
+    }
+}
+
+
